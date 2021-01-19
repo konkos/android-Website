@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title>Main</title>
+
+  </head>
+  <body>
+    <div class="row">
+        <h1 class="border border-primary align-middle">UOM Mobile Applications class</h1>
+    </div>
+
+    <nav class="nav nav-pills flex-column flex-sm-row">
+      <a class="flex-sm-fill text-sm-center nav-link" href="index.html">HOME</a>
+      <a class="flex-sm-fill text-sm-center nav-link active" href="#">Video Lectures</a>
+      <a class="flex-sm-fill text-sm-center nav-link" href="https://github.com/UomMobileDevelopment">Github</a>
+    </nav>
+
+
+    <ul id="videoLecturesList">
+                
+    </ul>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    
+    <script>
+        let zoomLinks = [
+            "https://zoom.us/rec/share/a0_iwqTRdxJYmB38Fqaf_eg42pIZYpTLGlqPJLeGGUacYie9sZ_X7IVykbf_e4w9.bDjuTb93GS8WRXgZ",
+            "https://zoom.us/rec/share/wZ2ta7tr_HeeF3Zosthj7vOO0J88SRt3M6eWpJXxRJlnONGujufPiuMdouUqwHJS.u5WstExh2ivXLx3J",
+            "https://zoom.us/rec/share/Y8oxP2ukptjDDUu1gyfRenVGQL8d8wVhPFaFexwEsyfeM835vd9Ym62hNXFQZvkI.jq982DJzBu20iSzO",
+            "https://zoom.us/rec/share/-GO4u0IMGVVS4FmSCFKdDkPcHvFP_wRGjbTEYd7aPvDpKvnfHR1iB2kPEQDH6FMH.vCjhz4vSXdHMbAAn",
+            "https://zoom.us/rec/share/V6OHJQHcf3EvmKmwSpMuAIFoSqk_cLdh9VWDkxCOAsow5Ao0F7LtlACIcNCpq1KA.o43wp0Eig2TZc196",
+            "https://zoom.us/rec/share/ihvalN8jHeS1PStdJRU2AHf326ALV5bsWGMMy9B-FNNBdMWb4eZf_hG_3L3QXSih.SdOpq02-JZ_c-2YE",
+            "https://zoom.us/rec/share/Y8oxP2ukptjDDUu1gyfRenVGQL8d8wVhPFaFexwEsyfeM835vd9Ym62hNXFQZvkI.jq982DJzBu20iSzO",
+            "https://zoom.us/rec/share/roGRkiyWdHaWE7Z6pT_5rN0H7IAD39wO66739QhRiI3xaUdvXshRm-RzpQmvKXLx.2GrfE88CS3d60PV-"
+        ];
+
+        let ulTag = document.getElementById("videoLecturesList");
+
+        for(let i=0; i<zoomLinks.length; i++){
+            console.log(zoomLinks[i]);
+            ulTag.innerHTML +=`<li class="list-item"><a href="${zoomLinks[i]}">Lecture ${i+1}</a></li>`;
+        }
+    </script>  
+
+</body>
+</html>
