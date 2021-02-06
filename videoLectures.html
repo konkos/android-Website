@@ -13,13 +13,13 @@
   </head>
   <body>
     <div class="row">
-        <h1 class="border border-primary align-middle">UOM Mobile Applications class</h1>
+      <h1 class="border border-primary align-middle bg-primary text-white text-center">UOM Mobile Applications class</h1>
     </div>
 
-    <nav class="nav nav-pills flex-column flex-sm-row">
-      <a class="flex-sm-fill text-sm-center nav-link" href="index.html">HOME</a>
+    <nav class="nav nav-pills flex-column flex-sm-row" id="nav">
+      <!-- <a class="flex-sm-fill text-sm-center nav-link" href="index.html">HOME</a>
       <a class="flex-sm-fill text-sm-center nav-link active" href="#">Video Lectures</a>
-      <a class="flex-sm-fill text-sm-center nav-link" href="https://github.com/UomMobileDevelopment">Github</a>
+      <a class="flex-sm-fill text-sm-center nav-link" href="https://github.com/UomMobileDevelopment">Github</a> -->
     </nav>
 
 
@@ -28,8 +28,9 @@
     </ul>
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
 
-    
+    <script src="menu.js"></script>
     <script>
         let zoomLinks = [
             "https://zoom.us/rec/share/a0_iwqTRdxJYmB38Fqaf_eg42pIZYpTLGlqPJLeGGUacYie9sZ_X7IVykbf_e4w9.bDjuTb93GS8WRXgZ",
@@ -46,7 +47,7 @@
 
         for(let i=0; i<zoomLinks.length; i++){
             console.log(zoomLinks[i]);
-            ulTag.innerHTML +=`<li class="list-item"><a href="${zoomLinks[i]}">Lecture ${i+1}</a></li>`;
+            ulTag.innerHTML +=`<li class="list-item"><a href="${zoomLinks[i]}"><h3>Lecture ${i+1}<h3></a></li>`;
         }
     </script>  
 
